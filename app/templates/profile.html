@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="/static/css/profile.css">
+{% endblock %}
+
+{% block main %}
+    <h1 class="page-header">Profile</h1>
+    
+    <div class="profile-container">
+        
+        
+        
+        <div class="img-container">
+    		<img src="{{ url_for('static', filename='SAhanzo.png')}}" />
+    	</div>
+        <div class="info-container">
+    		<h3>Naruto Online</h3>
+    		<div class="info-container-2">
+    			<p>Today's date is {{ date }}</p>
+    			<hr>
+    			<p><strong>Username: </strong>GG</p>
+    			<p><strong>ID Number: </strong>5555555</p>
+    			<p><strong>Age: </strong>23</p>
+    			<p><strong>Gender: </strong>Male</p>
+    			<hr>
+    			<p>Hello</p>
+    		</div>
+    	</div>
+    </div>
+
+{% endblock %}
